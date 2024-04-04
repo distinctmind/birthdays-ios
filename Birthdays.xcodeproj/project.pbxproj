@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEE90C542BB1E4A400184F7C /* PeopleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C532BB1E4A400184F7C /* PeopleApp.swift */; };
+		CE4BF3EB2BBDB66600C9ADA0 /* PersonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4BF3EA2BBDB66600C9ADA0 /* PersonViewModel.swift */; };
+		CE8DD84B2BB35E9C00A928DC /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DD84A2BB35E9C00A928DC /* TimeFormatting.swift */; };
+		CEE90C542BB1E4A400184F7C /* Birthdays.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C532BB1E4A400184F7C /* Birthdays.swift */; };
 		CEE90C562BB1E4A400184F7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C552BB1E4A400184F7C /* ContentView.swift */; };
 		CEE90C582BB1E4A600184F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE90C572BB1E4A600184F7C /* Assets.xcassets */; };
 		CEE90C5B2BB1E4A600184F7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEE90C5A2BB1E4A600184F7C /* Preview Assets.xcassets */; };
+		CEE90C662BB1E6B800184F7C /* PersonModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C642BB1E6B800184F7C /* PersonModel.xcdatamodeld */; };
+		CEE90C682BB1E77100184F7C /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C672BB1E77100184F7C /* DataController.swift */; };
+		CEE90C6C2BB1E9DD00184F7C /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C6B2BB1E9DD00184F7C /* AddPersonView.swift */; };
+		CEE90C6E2BB1F3D100184F7C /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE90C6D2BB1F3D100184F7C /* EditPersonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CEE90C502BB1E4A400184F7C /* People.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = People.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEE90C532BB1E4A400184F7C /* PeopleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleApp.swift; sourceTree = "<group>"; };
+		CE4BF3EA2BBDB66600C9ADA0 /* PersonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewModel.swift; sourceTree = "<group>"; };
+		CE8DD84A2BB35E9C00A928DC /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		CEE90C502BB1E4A400184F7C /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEE90C532BB1E4A400184F7C /* Birthdays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Birthdays.swift; sourceTree = "<group>"; };
 		CEE90C552BB1E4A400184F7C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CEE90C572BB1E4A600184F7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEE90C5A2BB1E4A600184F7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CEE90C652BB1E6B800184F7C /* PersonModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PersonModel.xcdatamodel; sourceTree = "<group>"; };
+		CEE90C672BB1E77100184F7C /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		CEE90C6B2BB1E9DD00184F7C /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		CEE90C6D2BB1F3D100184F7C /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,10 +44,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4BF3E92BBDB60200C9ADA0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE4BF3EA2BBDB66600C9ADA0 /* PersonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE8DD8492BB35E7800A928DC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				CE8DD84A2BB35E9C00A928DC /* TimeFormatting.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		CEE90C472BB1E4A400184F7C = {
 			isa = PBXGroup;
 			children = (
-				CEE90C522BB1E4A400184F7C /* People */,
+				CEE90C522BB1E4A400184F7C /* Birthdays */,
 				CEE90C512BB1E4A400184F7C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +71,23 @@
 		CEE90C512BB1E4A400184F7C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CEE90C502BB1E4A400184F7C /* People.app */,
+				CEE90C502BB1E4A400184F7C /* Birthdays.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CEE90C522BB1E4A400184F7C /* People */ = {
+		CEE90C522BB1E4A400184F7C /* Birthdays */ = {
 			isa = PBXGroup;
 			children = (
-				CEE90C532BB1E4A400184F7C /* PeopleApp.swift */,
-				CEE90C552BB1E4A400184F7C /* ContentView.swift */,
+				CEE90C532BB1E4A400184F7C /* Birthdays.swift */,
+				CE8DD8492BB35E7800A928DC /* Helpers */,
+				CEE90C6A2BB1E9B000184F7C /* Views */,
 				CEE90C572BB1E4A600184F7C /* Assets.xcassets */,
+				CE4BF3E92BBDB60200C9ADA0 /* ViewModel */,
+				CEE90C632BB1E69100184F7C /* DataModel */,
 				CEE90C592BB1E4A600184F7C /* Preview Content */,
 			);
-			path = People;
+			path = Birthdays;
 			sourceTree = "<group>";
 		};
 		CEE90C592BB1E4A600184F7C /* Preview Content */ = {
@@ -67,12 +98,31 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		CEE90C632BB1E69100184F7C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEE90C642BB1E6B800184F7C /* PersonModel.xcdatamodeld */,
+				CEE90C672BB1E77100184F7C /* DataController.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		CEE90C6A2BB1E9B000184F7C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CEE90C552BB1E4A400184F7C /* ContentView.swift */,
+				CEE90C6B2BB1E9DD00184F7C /* AddPersonView.swift */,
+				CEE90C6D2BB1F3D100184F7C /* EditPersonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CEE90C4F2BB1E4A400184F7C /* People */ = {
+		CEE90C4F2BB1E4A400184F7C /* Birthdays */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CEE90C5E2BB1E4A600184F7C /* Build configuration list for PBXNativeTarget "People" */;
+			buildConfigurationList = CEE90C5E2BB1E4A600184F7C /* Build configuration list for PBXNativeTarget "Birthdays" */;
 			buildPhases = (
 				CEE90C4C2BB1E4A400184F7C /* Sources */,
 				CEE90C4D2BB1E4A400184F7C /* Frameworks */,
@@ -82,9 +132,9 @@
 			);
 			dependencies = (
 			);
-			name = People;
+			name = Birthdays;
 			productName = People;
-			productReference = CEE90C502BB1E4A400184F7C /* People.app */;
+			productReference = CEE90C502BB1E4A400184F7C /* Birthdays.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +152,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CEE90C4B2BB1E4A400184F7C /* Build configuration list for PBXProject "People" */;
+			buildConfigurationList = CEE90C4B2BB1E4A400184F7C /* Build configuration list for PBXProject "Birthdays" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +165,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CEE90C4F2BB1E4A400184F7C /* People */,
+				CEE90C4F2BB1E4A400184F7C /* Birthdays */,
 			);
 		};
 /* End PBXProject section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE90C682BB1E77100184F7C /* DataController.swift in Sources */,
+				CE8DD84B2BB35E9C00A928DC /* TimeFormatting.swift in Sources */,
+				CEE90C662BB1E6B800184F7C /* PersonModel.xcdatamodeld in Sources */,
+				CE4BF3EB2BBDB66600C9ADA0 /* PersonViewModel.swift in Sources */,
+				CEE90C6C2BB1E9DD00184F7C /* AddPersonView.swift in Sources */,
 				CEE90C562BB1E4A400184F7C /* ContentView.swift in Sources */,
-				CEE90C542BB1E4A400184F7C /* PeopleApp.swift in Sources */,
+				CEE90C542BB1E4A400184F7C /* Birthdays.swift in Sources */,
+				CEE90C6E2BB1F3D100184F7C /* EditPersonView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +322,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"People/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Birthdays/Preview Content\"";
 				DEVELOPMENT_TEAM = N9K8GBUBQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +351,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"People/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Birthdays/Preview Content\"";
 				DEVELOPMENT_TEAM = N9K8GBUBQP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +376,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CEE90C4B2BB1E4A400184F7C /* Build configuration list for PBXProject "People" */ = {
+		CEE90C4B2BB1E4A400184F7C /* Build configuration list for PBXProject "Birthdays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE90C5C2BB1E4A600184F7C /* Debug */,
@@ -329,7 +385,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CEE90C5E2BB1E4A600184F7C /* Build configuration list for PBXNativeTarget "People" */ = {
+		CEE90C5E2BB1E4A600184F7C /* Build configuration list for PBXNativeTarget "Birthdays" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CEE90C5F2BB1E4A600184F7C /* Debug */,
@@ -339,6 +395,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEE90C642BB1E6B800184F7C /* PersonModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEE90C652BB1E6B800184F7C /* PersonModel.xcdatamodel */,
+			);
+			currentVersion = CEE90C652BB1E6B800184F7C /* PersonModel.xcdatamodel */;
+			path = PersonModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CEE90C482BB1E4A400184F7C /* Project object */;
 }

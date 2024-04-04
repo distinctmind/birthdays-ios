@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct PeopleApp: App {
+struct BirthdaysApp: App {
+    @State private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
